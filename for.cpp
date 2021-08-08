@@ -1,16 +1,25 @@
-#include <stdio.h>
+#include <iostream>
 
-int main() {
+using namespace std;
+
+int main() 
+{
 	
-	int i;
+	char c[4];
+	c[0] = 'H';
+	c[1] = 'o';
+	c[2] = 'l';
+	c[3] = 'a';
 	
-	for(i =0; i!=10 ;i++){
-	
-	printf("%d \n",i);
-	
+	for (int i=0; i<4;i++)
+	{
+		cout << c[i];
+		
 	}
 	
+	cout<< endl;
 	
+	cin.get();
 	
 	return 0;
 	

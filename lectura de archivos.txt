@@ -1,0 +1,21 @@
+manejo de datos
+
+FILE * "variable" = para generar la variable
+FILE * "variable" = fopen ("datos.txt","rb"); fopen es la funcion para abrir el archivo , y se pasan 2 parametros el nombre exacto del archivo y la manipulacion, en este caso RB es read binary tambien es W que es write
+
+while(feof(flujo)==0) // esta linea permite leer caracteres y desplasarse por el archivo, que va a ir dando valores , cuando no encuentra ningun valor mas devuelve 0 entonces te permite leer todo el archivo y manipularlo
+
+hay 3 tipos
+1 caso :"variableTemporalChar"= fgetc("variable") te permite traer cada uno de los caracteres y asignar en una variable temporanea para mostrar
+2 caso :fscanf("variable", "%d%s", &"variableTemporalChar",&"variableTemporalInt") en esta linea te permiete almacenar del archi varios tipos de datos e inclusive manipularlos
+
+
+fseek( "variable", 0, SEEK_END); mueve nuestro flujo hasta el final del archivo recibe 3 parametros la variable de lectura del archivo, , cuantos espacios va mover  y dede donde van a empezar a moverlo
+int n_elmentos = ftell(flujo); te va a dar lar cantidad de elementos o caracteres que tiene el archivo q lo vamos  almacenar en una variable para despues crear el array
+rewind(flujo); volver al inicio el flujo
+
+char * cadena = (char*) calloc(sizeof(char), n_elementos; // creo un array de carcteres dinamico a travez de calloc que me pide el tipo y cantidad de caracteres
+
+   
+
+

@@ -1,0 +1,44 @@
+Funcion recursiva=  te permite llamar a la misma funcion y hacer un mismo proceso hasta cumplirlo  y asignar siempre un parametro de transicion y de final con un condicional
+ 
+sizeOf=  tamaño de arreglo o datos en byte
+
+estructuras= es una coleccion de miembros de distintos datos (muy similar a una clase
+struct perro
+{
+	char nombre [30];
+ 	int edadMeses;
+	float peso;
+} perro1={nombre,edad,peso};
+o se puede hacer un arreglo de struct
+ej: perros[3] = quiere decir que vamos a nombrar 3 perros
+
+Strcturas Añadidas, podemos añadir una structura dentro de otra EJ:
+
+struct dueño
+{
+	char nombre [30];
+ 	char direccion;
+	
+} 
+struct perro
+{
+	char nombre [30];
+ 	int edadMeses;
+	float peso;
+	struct dueño dueñoPerro; // sintaxiz es dueño del nombre de la structura y su nombre de variable
+} 
+
+PUNTEROS, LA FUNCION IMPORTANTE ES 
+ASIGNACION DENAMICA DE MEMORIA
+
+LAS VARIABLES DE PUNTEROS DA DIRECCIONES DE MEMORIA
+int *ptro - indico el tipo de la variable
+printf("%d" *ptro) indico la indireccion o sea el valor que asigna esa direccion de variable
+ 
+modularizacion	
+
+recursividad o recursion
+es una tecnica de programacion
+
+
+
